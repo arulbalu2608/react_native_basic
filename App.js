@@ -1,4 +1,5 @@
 import React from 'react';
+import BasicForm from './Components/BasicForm';
 import FlatListExample from './Components/FlatList';
 import HelloWorld from './Components/Helloworld';
 import SectionListExample from './Components/SectionList';
@@ -8,7 +9,8 @@ function App() {
     <>
       {/* <HelloWorld /> */}
       {/* <FlatListExample /> */}
-      <SectionListExample />
+      {/* <SectionListExample /> */}
+      <BasicForm />
     </>
   );
 }
