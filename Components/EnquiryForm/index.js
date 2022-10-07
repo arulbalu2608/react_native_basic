@@ -1,5 +1,13 @@
 import React, {useState} from 'react';
-import {View, Text, TextInput, TouchableOpacity, Image} from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  Image,
+  SafeAreaView,
+} from 'react-native';
+import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import NormalSelect from '../Common/NormalSelect';
 import upload from '../../assets/icons/logout.png';
 import {styles} from './styles';
@@ -26,7 +34,7 @@ function EnquiryForm() {
   };
 
   return (
-    <View style={styles.container}>
+    <KeyboardAwareScrollView style={styles.container}>
       <View style={styles.formContainer}>
         <Text style={styles.title}>How can we help?</Text>
 
@@ -58,7 +66,7 @@ function EnquiryForm() {
           setOpen={setisStateOpen}
           setValue={setState}
           setItems={setStateOption}
-          zIndex={1000}
+          zIndex={2000}
         />
 
         <NormalSelect
@@ -70,7 +78,7 @@ function EnquiryForm() {
           setOpen={setisCityOpen}
           setValue={setcity}
           setItems={setCityOption}
-          zIndex={-1}
+          zIndex={1000}
         />
 
         <Text style={styles.label}>Message (optional)</Text>
@@ -94,7 +102,7 @@ function EnquiryForm() {
           <Text style={styles.buttonLabel}>Enquiry Now</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </KeyboardAwareScrollView>
   );
 }
 
