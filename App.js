@@ -1,4 +1,6 @@
 import React from 'react';
+import {ScrollView} from 'react-native';
+import ApiCall from './Components/ApiCall';
 import BasicForm from './Components/BasicForm';
 import EnquiryForm from './Components/EnquiryForm';
 import FlatListExample from './Components/FlatList';
@@ -10,9 +12,10 @@ function App() {
     <>
       {/* <HelloWorld /> */}
       {/* <FlatListExample /> */}
-      {/* <SectionListExample /> */}
-      {/* <BasicForm /> */}
-      <EnquiryForm />
+      {/* <SectionListExample />
+      <BasicForm /> */}
+      {/* <EnquiryForm /> */}
+      <ApiCall />
     </>
   );
 }
